@@ -43,13 +43,17 @@ body, p {
 	color: #4d5055; 
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
+p{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 h1 {
 	color: #24262a;
 	font-weight: 700;
 	font-size: 2.5rem;
 	line-height: 3.25rem;
-	font-family: "Poppins"
+	/* font-family: "Poppins" */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2 {
@@ -57,7 +61,8 @@ h2 {
 	font-weight: 700;
 	font-size: 2rem;
 	line-height: 2.5rem;
-	font-family: "Poppins"
+	/* font-family: "Poppins" */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h3 {
@@ -65,7 +70,8 @@ h3 {
 	font-weight: 700;
 	font-size: 1.75rem;
 	line-height: 2.25rem;
-	font-family: "Poppins"
+	/* font-family: "Poppins" */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h4 {
@@ -73,7 +79,8 @@ h4 {
 	font-weight: 700;
 	font-size: 1.5rem;
 	line-height: 2rem;
-	font-family: "Poppins"
+	/* font-family: "Poppins" */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h5 {
@@ -81,7 +88,8 @@ h5 {
 	font-weight: 700;
 	font-size: 1.25rem;
 	line-height: 1.625rem;
-	font-family: "Poppins"
+	/* font-family: "Poppins" */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h6 {
@@ -89,7 +97,8 @@ h6 {
 	font-weight: 700;
 	font-size: 1rem;
 	line-height: 1.375rem;
-	font-family: "Poppins"
+	/* font-family: "Poppins" */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .p-large {
@@ -571,7 +580,8 @@ input[type='checkbox'] {
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 1.5rem;
-	font-family: "Poppins";
+	/* font-family: "Poppins"; */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .basic-1 h6 {
@@ -804,7 +814,8 @@ input[type='checkbox'] {
 	font-weight: 600;
 	font-size: 1.125rem;
 	line-height: 1.75rem;
-	font-family: 'Poppins';
+	/* font-family: 'Poppins'; */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .accordion-1 .card button:hover {
@@ -814,7 +825,8 @@ input[type='checkbox'] {
 .accordion-1 .card button:before {
 	float: left;
 	margin-right: 0.625rem;
-	font-family: 'Font Awesome 5 Free';
+	/* font-family: 'Font Awesome 5 Free'; */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: 900;
 	content: "\f078";
 	transition: all 0.2s;
