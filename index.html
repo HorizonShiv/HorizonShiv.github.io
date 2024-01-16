@@ -1,423 +1,1208 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Your description">
-    <meta name="author" content="Your name">
+  <!--<![endif]-->
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
-    <!-- Webpage Title -->
-    <title>Shiv-Porfolio</title>
-    
-    <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Name of your web site" />
+    <meta name="author" content="Marketify" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Erling</title>
+
+    <link
+      href="Font/css2c3ec.css?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="Font/css25af5.css?family=Archivo+Black&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/plugins.css" />
+    <link rel="stylesheet" type="text/css" href="css/modalboxes.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <![endif]-->
     <style>
-        
-        .logo-image-img {
-            width: 155px !important;
-            height: 30px !important;
+        #HoverPic{
+            filter: grayscale(100%);
+            transition: ease-in .3s;
         }
-        .header{
-            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/HomeBg.png) center center no-repeat;
-            background-size: cover;
-            /* filter: grayscale(80%); */
-
+        #HoverPic:hover{
+            filter: grayscale(0%);
         }
-    
+        .text h3{
+          /* font-size: 90px !important; */
+          font-weight: 100 !important;
+        }
 
+
+        #PortfolioHead{
+          filter: grayscale(100%);
+          border-bottom: 5px solid red !important;
+          border-style: inset;
+          /* box-shadow: 10px 5px 5px red !important; */
+        }
     </style>
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="images/Horizon.png">
-</head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <div class="container">
-            
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img class="logo-image-img" src="images/HorizonLogo.png" alt="alternative"></a>  
 
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
+<link rel="icon" href="img/about/Horizon.png">
+  </head>
+  <body class="tm_sidebar">
+    <div id="preloader">
+      <div class="loader_line"></div>
+    </div>
 
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#projects">Project</a>
-                    </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item page-scroll" href="project.html">Project Details</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
-                        </div>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a href="https://github.com/HorizonShiv">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-github fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="https://www.behance.net/lightninggamer1">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-behance fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </span>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
-
-
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h1 class="h1-large">
-                            Hello World !!<br>
-                            I am Shiv Patel
-
-                        </h1>
-                        <a class="btn-solid-lg page-scroll" href="https://flowcv.com/resume/g2lhfsis4q" target="_blank">Download CV</a>
-                        <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contact Me</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
-
-
-    <!-- About-->
-    <div id="about" class="basic-1 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container first">
-                        <h2>About Me</h2>
-                        <p>
-                            Hi there, I'm Shiv a Web developer as well as preparing to be a Virtual Reality Developer. I've completed my B. Tech as a Web developer from Sal Engineering and Technical Institute. Moreover, I have led a Team in many hackathons as well as shared knowledge toward making reliable Projects. Furthermore, I was an admin of Code Club SAL. Which, my role was to give proper pathways in making Student's work done and help them if they were having any problems. These things not only illustrate my leadership skills but also helped the Skill development of my batchmate.
-
-                        </p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-
-                <!-- <div class="col-lg-4">
-                    <div class="text-container second">
-                        <div class="time">2019 - PRESENT</div>
-                        <h6>Freelance Web Developer</h6>
-                        <p>Working happily on my own web projects</p>
-                        <div class="time">2018 - 2019</div>
-                        <h6>Lead Web Developer</h6>
-                        <p>Beautiful project for a major digital agency</p>
-                    </div> 
-                </div>  -->
-                
-                <!-- <div class="col-lg-4">
-                    <div class="text-container third">
-                        <div class="time">2017 - 2018</div>
-                        <h6>Senior Web Designer</h6>
-                        <p>Inhouse web designer for ecommerce firm</p>
-                        <div class="time">2016 - 2017</div>
-                        <h6>Junior Web Designer</h6>
-                        <p>Junior web designer for small web agency</p>
-                    </div> 
-                </div> -->
-
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of about -->
-
-
-    <!-- Services -->
-    <!-- <div id="services" class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Offered services</h2>
-                    <p class="p-heading">Web design and development have been my bread and butter for more than 5 years. During that time I've discovered that I can help startups and companies with the following services</p>
-                </div> 
-            </div> 
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="far fa-gem"></i>
-                        <h4>DESIGN</h4>
-                        <p>Successful online projects start with good design. It establishes a solid foundation for future development and allows for long term growth</p>
-                    </div> 
-                </div> 
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="fas fa-code"></i>
-                        <h4>DEVELOPMENT</h4>
-                        <p>I can code my own designs or even use the customer's design as base. My focus is to generate clean code that's well structured for reliability</p>
-                    </div> 
-                </div> 
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="fas fa-tv"></i>
-                        <h4>BASIC SEO</h4>
-                        <p>i can setup your project to use basic SEO principles which will push your project to the first page on search engines and save you ads money</p>
-                    </div>
-                </div> 
-            </div> 
-        </div> 
-    </div>  -->
-    <!-- end of services -->
-
-
-    <!-- Details -->
-	<!-- <div class="split">
-		<div class="area-1">
-		</div><div class="area-2 bg-gray">
-            <div class="container">    
-                <div class="row">
-                    <div class="col-lg-12">     
-                        
-
-                        <div class="text-container">
-                            <h2>Why Work With Me</h2>
-                            <p>I am a great communicator and love to invest the necessary time to understand the customer's problem very well</p>
-                            <h5>DESIGN TOOLS</h5>
-                            <p>My favorite design tools are Photoshop and Illustrator but I can create designs in Figma, Sketch and Adobe XD too</p>
-                            <h5>DEVELOPMENT SKILLS</h5>
-                            <p>I am familiar and work on a daily basis with HTML, CSS, JavaScript, Bootstrap and other modern frameworks</p>
-                            
-                            <div class="icons-container">
-                                <img src="images/details-icon-photoshop.png" alt="alternative">
-                                <img src="images/details-icon-illustrator.png" alt="alternative">
-                                <img src="images/details-icon-html.png" alt="alternative">
-                                <img src="images/details-icon-css.png" alt="alternative">
-                                <img src="images/details-icon-bootstrap.png" alt="alternative">
-                                <img src="images/details-icon-javascript.png" alt="alternative">
-                            </div> 
-                        </div> 
-
-
-                    </div>
-                </div> 
-            </div> 
-		</div>
-    </div> -->
-    <!-- end of details -->
-
-
-    <!-- Projects -->
-    <div id="projects" class="basic-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Delivered projects</h2>
-                    <p class="p-heading">Listed below are some of the most representative projects I've worked on. </p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="https://github.com/HorizonShiv/CampusConnect">
-                                <img class="img-fluid" src="images/CampusConnectHeader.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> SAL Campus, <strong>Project:</strong> Campus Connect, To provide a seamless experience for students and all other members by connecting them and giving them features to manipulate and manage certain things like Certificates, event management, Document management, and so on. It connects the whole campus in one place.</p>
-                    </div> <!-- end of text-container -->
-
-                   
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="https://github.com/HorizonShiv/BusinessSite">
-                                <img class="img-fluid" src="images/SmartNestFMHeader.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Client, <strong>Project:</strong> SmartNestFM.com, It was a Business Site with a Fully Working admin panel so that owners don't have to do it manually like uploading their work, adding new services, and many more. The company was providing management services and they wanted an admin panel so that they could manipulate their data effortlessly </p>
-                    </div> <!-- end of text-container -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-3 -->
-    <!-- end of projects -->
-
-
-    <!-- Works -->
-    <!-- <div class="basic-4">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/work-1.jpg" alt="alternative">
-                            </a>
-                        </div> 
-                        <p><strong>For:</strong> Zigoland, <strong>Project:</strong> started a new website from ground up for a new product <a class="blue" href="project.html">details</a></p>
-                    </div> 
-                </div> 
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/work-2.jpg" alt="alternative">
-                            </a>
-                        </div>
-                        <p><strong>For:</strong> Visodream, <strong>Project:</strong> developed a new forum for the Visodream community <a class="blue" href="project.html">details</a></p>
-                    </div> 
-                </div> 
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/work-3.jpg" alt="alternative">
-                            </a>
-                        </div> 
-                        <p><strong>For:</strong> Primoday, <strong>Project:</strong> complete redesign of their corporate website and platform <a class="blue" href="project.html">details</a></p>
-                    </div> 
-                </div> 
-
+    <div class="erling_tm_all_wrap">
+      <div class="erling_tm_mobile_menu">
+        <div class="mobile_menu_inner">
+          <div class="mobile_in">
+            <div class="logo">
+              <a href="#"><img src="img/logo/logo.png" alt /></a>
             </div>
+            <div class="trigger">
+              <div class="hamburger hamburger--slider">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown_inner">
+            <ul class="anchor_nav">
+              <li class="current"><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <!-- <li><a href="#service">Services</a></li> -->
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#timeline">Timeline</a></li>
+              <!-- <li><a href="#testimonial">Testimonial</a></li> -->
+              <!-- <li><a href="#news">News</a></li> -->
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-        </div> 
-    </div>  -->
-    <!-- end of works -->
+      <div class="erling_tm_sidebar_menu">
+        <div class="sidebar_inner">
+          <div class="logo">
+            <a href="#"><img src="img/logo/logo.png" alt /></a>
+          </div>
+          <div class="menu">
+            <ul class="anchor_nav">
+              <li class="current"><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <!-- <li><a href="#service">Services</a></li> -->
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#timeline">Timeline</a></li>
+              <!-- <li><a href="#testimonial">Testimonial</a></li> -->
+              <!-- <li><a href="#news">News</a></li> -->
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <!-- <p>
+              Copyright 2024 by
+              <a href=" target="_blank"
+                >Shiv Patel</a
+              >
+            </p> -->
+            <p>All rights are reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="erling_tm_mainpart">
+        <div class="erling_tm_section clearfix" id="home">
+          <div class="erling_tm_hero">
+            <div class="container">
+              <div class="content">
+                <div class="details square">
+                  <div class="image">
+                    <div class="main" id="HoverPic" data-img-url="img/about/1.jpeg"></div>
+                  </div>
+                  <div class="text">
+                    <!-- <h3 class="stroke">Shiv</h3> -->
+                    <h3>Shiv</h3>
+                    <h3>Patel</h3>
+                    <div class="job">
+                      <!-- <span>UI Designer</span> -->
+                      <span>Web Developer</span>
+                      <!-- <span>SEO Optimizer</span> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="erling_tm_section clearfix" id="about">
+          <div class="erling_tm_about">
+            <div class="container">
+              <div class="about_inner">
+                <div class="left wow fadeInUp" data-wow-duration="1s">
+                  <div class="erling_tm_title">
+                    <span>Shiv Patel</span>
+                    <h3>About Me</h3>
+                  </div>
+                  <div class="text">
+                    <p>
+                        Hi there, I'm Shiv a Web developer as well as preparing to be a Virtual Reality Developer. I've completed my B. Tech as a Web developer from Sal Engineering and Technical Institute. Moreover, I have led a Team in many hackathons as well as shared knowledge toward making reliable Projects. Furthermore, I was an admin of Coder Club SAL. Which, my role was to give proper pathways in making Student's work done and help them if they were having any problems. These things not only illustrate my leadership skills but also helped the Skill development of my batchmate.
+                    </p>
+                  </div>
+                  <div class="erling_tm_button">
+                    <a href="img/cv/ShivPatel.pdf" download>Download CV</a>
+                  </div>
+                </div>
+                <div
+                  class="right wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.2s"
+                >
+                  <div class="list">
+                    <div class="accordion_wrap ready">
+                      <div class="accordion active">
+                        <div class="accordion_header">
+                          <h3>Personal Details</h3>
+                        </div>
+                        <div class="accordion_content">
+                          <div class="info_list">
+                            <ul>
+                              <li>
+                                <span>Name:</span>
+                                <span>Shiv Patel</span>
+                              </li>
+                              <li>
+                                <span>Email:</span>
+                                <span><a class="line_effect" href="mailto: patelshiv2025@gmail.com">
+                                      <!-- <span class="__cf_email__"
+                                      data-cfemail="275e4852554a464e4b67404a464e4b0944484a"></span> -->
+                                      patelshiv2025@gmail.com
+                                    </a>
+                                </span>
+                              </li>
+                              <!-- <li>
+                                <span>Phone:</span>
+                                <span><a class="line_effect" href="#">+************</a></span>
+                              </li> -->
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion">
+                        <div class="accordion_header">
+                          <h3>Programming Skills</h3>
+                        </div>
+                        <div class="accordion_content">
+                          <div class="info_list">
+                            <div class="my_skills">
+                              <ul>
+                                <li>
+                                  <span class="title">PHP</span>
+                                  <div class="erling_progress">
+                                    <div class="progress_inner" data-value="80">
+                                      <div class="background">
+                                        <div class="bar">
+                                          <div class="bar_in"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <span class="title">C++</span>
+                                  <div class="erling_progress">
+                                    <div class="progress_inner" data-value="80">
+                                      <div class="background">
+                                        <div class="bar">
+                                          <div class="bar_in"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <span class="title">Wordpress</span>
+                                  <div class="erling_progress">
+                                    <div class="progress_inner" data-value="70">
+                                      <div class="background">
+                                        <div class="bar">
+                                          <div class="bar_in"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion">
+                        <div class="accordion_header">
+                          <h3>Language Skills</h3>
+                        </div>
+                        <div class="accordion_content">
+                          <div class="info_list">
+                            <div class="my_skills">
+                              <ul>
+                                <li>
+                                  <span class="title">Gujarati</span>
+                                  <div class="erling_progress">
+                                    <div class="progress_inner" data-value="95">
+                                      <div class="background">
+                                        <div class="bar">
+                                          <div class="bar_in"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <span class="title">Hindi</span>
+                                  <div class="erling_progress">
+                                    <div class="progress_inner" data-value="80">
+                                      <div class="background">
+                                        <div class="bar">
+                                          <div class="bar_in"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <span class="title">English</span>
+                                  <div class="erling_progress">
+                                    <div class="progress_inner" data-value="60">
+                                      <div class="background">
+                                        <div class="bar">
+                                          <div class="bar_in"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion">
+                        <div class="accordion_header">
+                          <h3>Other Skills</h3>
+                        </div>
+                        <div class="accordion_content">
+                          <div class="info_list">
+                            <div class="my_skills">
+                              <ul>
+                                <li>
+                                  <span class="title">Adobe Suite</span>
+                                  <div class="erling_progress">
+                                    <div class="progress_inner" data-value="80">
+                                      <div class="background">
+                                        <div class="bar">
+                                          <div class="bar_in"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <span class="title">Unreal Engine</span>
+                                  <div class="erling_progress">
+                                    <div class="progress_inner" data-value="70">
+                                      <div class="background">
+                                        <div class="bar">
+                                          <div class="bar_in"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="erling_tm_section clearfix" id="portfolio">
+          <div class="erling_tm_portfolio swiper-section">
+            <div class="container">
+              <div class="erling_tm_title wow fadeInUp" data-wow-duration="1s">
+                <span>Portfolio</span>
+                <h3>Creative Portfolio</h3>
+              </div>
+              <div
+                class="portfolio_list gallery_zoom wow fadeInUp"
+                data-wow-duration="1s"
+              >
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                      <div class="list_inner">
+                        <div class="image">
+                          <img src="img/thumbs/1-1.jpg" id="PortfolioHead" alt />
+                          <div
+                            class="main"
+                            id="PortfolioHead"
+                            data-img-url="img/portfolio/SmartNestFmHeader.png"
+                          ></div>
+                        </div>
+                        <div class="details">
+                          <span>Client</span>
+                          <h3>SmartNestFm Website</h3>
+                        </div>
+                        <a
+                          class="erling_tm_full_link portfolio_popup"
+                          href="#"
+                        ></a>
+
+                        <div class="hidden_content_portfolio">
+                          <div id="HoverPic" class="popup_details">
+                            <div class="main_details">
+                              <div class="textbox">
+                                <p>
+                                  SmartNestFM.com, It was a Business Site with a Fully Working admin panel so that owners don't have to do it manually like uploading their work, adding new services, and many more. The company was providing management services and they wanted an admin panel so that they could manipulate their data effortlessly
+                                </p>
+                              </div>
+                              <div class="detailbox">
+                                <ul>
+                                  <li>
+                                    <span class="first">Client</span>
+                                    <span>Company</span>
+                                  </li>
+                                  <li>
+                                    <span class="first">Category</span>
+                                    <span><a href="#">Website</a></span>
+                                  </li>
+                                  <li>
+                                    <span class="first">Date</span>
+                                    <span>Augest 31, 2023</span>
+                                  </li>
+                                  <!-- <li>
+                                    <span class="first">Share</span>
+                                    <ul class="share">
+                                      <li>
+                                        <a href="#"
+                                          ><img
+                                            class="svg"
+                                            src="img/svg/social/facebook.svg"
+                                            alt
+                                        /></a>
+                                      </li>
+                                      <li>
+                                        <a href="#"
+                                          ><img
+                                            class="svg"
+                                            src="img/svg/social/twitter.svg"
+                                            alt
+                                        /></a>
+                                      </li>
+                                      <li>
+                                        <a href="#"
+                                          ><img
+                                            class="svg"
+                                            src="img/svg/social/instagram.svg"
+                                            alt
+                                        /></a>
+                                      </li>
+                                    </ul>
+                                  </li> -->
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="additional_images">
+                              <ul>
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+
+                                        data-img-url="img/portfolio/SmartNestFm1.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/SmartNestFm2.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/SmartNestFm3.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/SmartNestFm4.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/SmartNestFm5.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/SmartNestFm6.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+                                
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="list_inner">
+                        <div class="image">
+                          <img src="img/thumbs/1-1.jpg" alt />
+                          <div
+                            class="main"
+                            id="PortfolioHead"
+                            data-img-url="img/portfolio/CampusConnectHeader.png"
+                          ></div>
+                        </div>
+                        <div class="details">
+                          <span>Sal Campus</span>
+                          <h3>Campus Connect</h3>
+                        </div>
+                        <a
+                          class="erling_tm_full_link portfolio_popup"
+                          href="#"
+                        ></a>
+
+                        <div class="hidden_content_portfolio">
+                          <div id="HoverPic" class="popup_details">
+                            <div class="main_details">
+                              <div class="textbox">
+                                <p>
+                                  Campus Connect, To provide a seamless experience for students and all other members by connecting them  and giving them features to manipulate and manage certain things like Certificates, event management, Document management, and so on. It connects the whole campus in one place.
+                                </p>
+                              </div>
+                              <div class="detailbox">
+                                <ul>
+                                  <li>
+                                    <span class="first">Client</span>
+                                    <span>Sal Education</span>
+                                  </li>
+                                  <li>
+                                    <span class="first">Category</span>
+                                    <span><a href="#">Portal</a></span>
+                                  </li>
+                                  <li>
+                                    <span class="first">Date</span>
+                                    <span>May 22, 2023</span>
+                                  </li>
+                                  <!-- <li>
+                                    <span class="first">Share</span>
+                                    <ul class="share">
+                                      <li>
+                                        <a href="#"
+                                          ><img
+                                            class="svg"
+                                            src="img/svg/social/facebook.svg"
+                                            alt
+                                        /></a>
+                                      </li>
+                                      <li>
+                                        <a href="#"
+                                          ><img
+                                            class="svg"
+                                            src="img/svg/social/twitter.svg"
+                                            alt
+                                        /></a>
+                                      </li>
+                                      <li>
+                                        <a href="#"
+                                          ><img
+                                            class="svg"
+                                            src="img/svg/social/instagram.svg"
+                                            alt
+                                        /></a>
+                                      </li>
+                                    </ul>
+                                  </li> -->
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="additional_images">
+                              <ul>
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/CampusConnect1.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/CampusConnect2.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/CampusConnect3.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/CampusConnect4.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/CampusConnect5.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/CampusConnect6.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+                                
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="list_inner">
+                        <div class="image">
+                          <img src="img/thumbs/1-1.jpg" alt />
+                          <div
+                            class="main"
+                            id="PortfolioHead"
+                            data-img-url="img/portfolio/FileTrackingHeader.png"
+                          ></div>
+                        </div>
+                        <div class="details">
+                          <span>Hackathon-Rajkot Gov.</span>
+                          <h3>File Tarcking</h3>
+                        </div>
+                        <a
+                          class="erling_tm_full_link portfolio_popup"
+                          href="#"
+                        ></a>
+
+                        <div class="hidden_content_portfolio">
+                          <div id="HoverPic" class="popup_details">
+                            <div class="main_details">
+                              <div class="textbox">
+                                <p>
+                                  It’s a web Portal in which, Users can apply for any type of identification and can track their documents as well and get notified of who’s going to check their documents to provide integrity and confidentiality. And it goes the same with the other side, Authorities. They check all the necessary documents of the user and can make decisions on whether to approve or reject based on requirements. 
+                                </p>
+                                <p>
+                                  Additional things for users is if they got rejected for some reason, they would not have to start from the beginning, they can upload the form where they got rejected.
+                                </p>
+                                <p>
+                                  It’s a simple document tracking and processing portal to reduce paper-based work.
+                                </p>
+                              </div>
+                              <div class="detailbox">
+                                <ul>
+                                  <li>
+                                    <span class="first">Client</span>
+                                    <span>Hackathon-Rajkot Gov.</span>
+                                  </li>
+                                  <li>
+                                    <span class="first">Category</span>
+                                    <span><a href="#">Portal</a></span>
+                                  </li>
+                                  <li>
+                                    <span class="first">Date</span>
+                                    <span>Feb 11, 2023</span>
+                                  </li>
+                                  <!-- <li>
+                                    <span class="first">Share</span>
+                                    <ul class="share">
+                                      <li>
+                                        <a href="#"
+                                          ><img
+                                            class="svg"
+                                            src="img/svg/social/facebook.svg"
+                                            alt
+                                        /></a>
+                                      </li>
+                                      <li>
+                                        <a href="#"
+                                          ><img
+                                            class="svg"
+                                            src="img/svg/social/twitter.svg"
+                                            alt
+                                        /></a>
+                                      </li>
+                                      <li>
+                                        <a href="#"
+                                          ><img
+                                            class="svg"
+                                            src="img/svg/social/instagram.svg"
+                                            alt
+                                        /></a>
+                                      </li>
+                                    </ul>
+                                  </li> -->
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="additional_images">
+                              <ul>
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/FileTracking1.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/FileTracking2.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/FileTracking3.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/FileTracking4.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/FileTracking5.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="list_inner">
+                                    <div class="my_image">
+                                      <img src="img/thumbs/4-2.jpg" alt />
+                                      <div
+                                        class="main"
+                                        id=""
+                                        data-img-url="img/portfolio/FileTracking6.png"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </li>
+                                
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  
+                  <div class="erling_tm_swiper_progress fill">
+                    <div class="my_pagination_in">
+                      <span class="current"></span>
+                      <span class="pagination_progress"
+                        ><span class="all"><span></span></span
+                      ></span>
+                      <span class="total"></span>
+                    </div>
+                    <div class="my_navigation">
+                      <ul>
+                        <li>
+                          <a class="my_prev" href="#"
+                            ><i class="icon-left-open-1"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="my_next" href="#"
+                            ><i class="icon-right-open-1"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="erling_tm_section clearfix" id="timeline">
+          <div class="erling_tm_experience">
+            <div class="container">
+              <div class="erling_tm_title wow fadeInUp" data-wow-duration="1s">
+                <span>Timeline</span>
+                <h3>Timeline Period</h3>
+              </div>
+              <div class="experience_inner">
+                <!-- <div class="left">
+                  <div class="box">
+                    <div class="title wow fadeInUp" data-wow-duration="1s">
+                      <h3>Experience</h3>
+                    </div>
+                    <div class="list_wrap">
+                      <ul>
+                        <li class="wow fadeInUp" data-wow-duration="1s">
+                          <div class="list_inner">
+                            <div class="occ">
+                              <h3>Envato Market</h3>
+                              <span>Web Designer</span>
+                            </div>
+                            <div class="time">
+                              <span>2020-now</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-duration="1s">
+                          <div class="list_inner">
+                            <div class="occ">
+                              <h3>Behance</h3>
+                              <span>SEO Optimizer</span>
+                            </div>
+                            <div class="time">
+                              <span>2018-2020</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-duration="1s">
+                          <div class="list_inner">
+                            <div class="occ">
+                              <h3>Colorlib</h3>
+                              <span>Theme Reviewer</span>
+                            </div>
+                            <div class="time">
+                              <span>2016-2018</span>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="right">
+                  <div class="box">
+                    <div class="title wow fadeInUp" data-wow-duration="1s">
+                      <h3>Education</h3>
+                    </div>
+                    <div class="list_wrap">
+                      <ul>
+                        <li class="wow fadeInUp" data-wow-duration="1s">
+                          <div class="list_inner">
+                            <div class="occ">
+                              <h3>Sal Engineering and Technical Institute</h3>
+                              <span>B. Tech</span>
+                            </div>
+                            <div class="time">
+                              <span>2020-2023</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-duration="1s">
+                          <div class="list_inner">
+                            <div class="occ">
+                              <h3>R.C. Technical Institute</h3>
+                              <span>Diploma</span>
+                            </div>
+                            <div class="time">
+                              <span>2017-2020</span>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- <li class="wow fadeInUp" data-wow-duration="1s">
+                          <div class="list_inner">
+                            <div class="occ">
+                              <h3>Github Club</h3>
+                              <span>Web Sertification</span>
+                            </div>
+                            <div class="time">
+                              <span>2013-2015</span>
+                            </div>
+                          </div>
+                        </li> -->
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<br><br>
+        <div class="erling_tm_section clearfix" id="contact">
+          <div class="erling_tm_contact">
+            <div class="container">
+              <div class="erling_tm_title wow fadeInUp" data-wow-duration="1s">
+                <span>Contact</span>
+                <h3>Get in Touch</h3>
+              </div>
+              <div class="contact_inner">
+                <div class="accordion_wrap ready">
+                  
+                  <div class="accordion active wow fadeInUp" data-wow-duration="1s">
+                    <div class="accordion_header">
+                      <h3>Social Profiles</h3>
+                    </div>
+                    <div class="accordion_content">
+                      <div class="social">
+                        <ul>
+                          <li><a class="line_effect" target="_blank" href="https://github.com/HorizonShiv">Github</a></li>
+                          <li><a class="line_effect" target="_blank" href="https://www.instagram.com/shivpatel1203/">Instagram</a></li>
+                          <li><a class="line_effect" target="_blank" href="https://www.behance.net/lightninggamer1">Behance</a></li>
+                          <li><a class="line_effect" target="_blank" href="https://twitter.com/shivpatel3035">Twitter</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion wow fadeInUp" data-wow-duration="1s">
+                    <div class="accordion_header">
+                      <h3>Extra Info</h3>
+                    </div>
+                    <div class="accordion_content">
+                      <div class="info_list">
+                        <ul>
+                          <li>
+                            <span>Address:</span>
+                            <span>Gandhinagar, Gujarat, India</span>
+                          </li>
+                          <li>
+                            <span>Email:</span>
+                            <span><a class="line_effect" href="#">patelshiv2025@gmail.com</a></span>
+                          </li>
+                          <!-- <li>
+                            <span>Phone:</span>
+                            <span><a class="line_effect" href="#">+919714012746</a></span>
+                          </li> -->
+                          <!-- <li>
+                            <span>Website:</span>
+                            <span><a class="line_effect" href="#">www.horizonakashiv.com</a></span>
+                          </li> -->
+                        </ul>
+                      </div>
+                    </div>
+                    <br>
+                    <br>
+                  </div>
+
+                  <!-- <div class="accordion wow fadeInUp" data-wow-duration="1s">
+                    <div class="accordion_header">
+                      <h3>Fill the Form</h3>
+                    </div>
+                    <div class="accordion_content">
+                      <div class="form_wrapper">
+                        <form id="contactForm">
+                          <div class="error_box" id="empty-form">
+                            <p>Please Fill Required Fields</p>
+                          </div>
+                          <div class="error_box" id="subject-alert">
+                            <p>Please Select Subject</p>
+                          </div>
+                          <div class="error_box" id="security-alert">
+                            <p>Security code does not match !</p>
+                          </div>
+                          <div class="error_box" id="email-invalid">
+                            <p>
+                              Please enter a valid email address. Exp.
+                              <a
+                                href="https://marketifythemes.net/cdn-cgi/l/email-protection"
+                                class="__cf_email__"
+                                data-cfemail="f19489909c819d94b1969c90989ddf929e9c"
+                                >[email&#160;protected]</a
+                              >
+                            </p>
+                          </div>
+                          <div class="error_box" id="phone-invalid">
+                            <p>
+                              Please enter a valid phone number.Exp.
+                              +998991774433
+                            </p>
+                          </div>
+                          <div class="error_box" id="error_mail">
+                            <p></p>
+                          </div>
+                          <div class="success_box" id="success_mail">
+                            <p>
+                              Your message has been sent. We will contact you as
+                              soon as possible.
+                            </p>
+                          </div>
+                          <ul>
+                            <li>
+                              <input
+                                type="text"
+                                placeholder="Name"
+                                name="contact_name"
+                                class="cf-form-control"
+                              />
+                              <span></span>
+                            </li>
+                            <li>
+                              <input
+                                type="text"
+                                placeholder="Email"
+                                name="contact_email"
+                                class="cf-form-control"
+                              />
+                              <span></span>
+                            </li>
+                            <li>
+                              <input
+                                type="text"
+                                placeholder="Phone"
+                                name="contact_phone"
+                                class="cf-form-control"
+                              />
+                              <span></span>
+                            </li>
+                            <li>
+                              <select
+                                name="contact_subject"
+                                class="cf-form-control"
+                              >
+                                <option value="Choose Services">
+                                  Choose Service
+                                </option>
+                                <option value="Web Development">
+                                  Web Development
+                                </option>
+                                <option value="UI/UX Design">
+                                  UI/UX Design
+                                </option>
+                              </select>
+                            </li>
+                            <li id="text-area-w">
+                              <textarea
+                                placeholder="Message"
+                                name="contact_message"
+                                class="cf-form-control"
+                              ></textarea>
+                            </li>
+                            <li id="enter_code">
+                              <span id="txtCaptchaSpan"></span>
+                              <input
+                                type="text"
+                                class="cf-form-control"
+                                name="contact_question"
+                                id="txtInput"
+                                autocomplete="off"
+                                placeholder="Please Enter Code *"
+                              />
+                              <input type="hidden" id="txtCaptcha" />
+                            </li>
+                          </ul>
+                          <div class="erling_tm_button">
+                            <button id="send_message" href="#">
+                              Send Message
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div> -->
+
+                  <!-- <div class="accordion wow fadeInUp" data-wow-duration="1s">
+                    <div class="accordion_header">
+                      <h3>Location</h3>
+                    </div>
+                    <div class="accordion_content">
+                      <div class="my_map">
+                        <div class="mapouter">
+                          <div class="gmap_canvas">
+                            <iframe
+                              width="100%"
+                              height="350"
+                              id="gmap_canvas"
+                              src="https://maps.google.com/maps?q=Broadway,%20New%20York&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                              frameborder="0"
+                              scrolling="no"
+                              marginheight="0"
+                              marginwidth="0"
+                            ></iframe
+                            ><a href="https://123movies-i.net/"></a
+                            ><br /><style>
+                              .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 350px;
+                                width: 100%;
+                              }</style
+                            ><a href="https://www.embedgooglemap.net/"
+                              >embed google map</a
+                            ><style>
+                              .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 350px;
+                                width: 100%;
+                              }
+                            </style>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="progressbar">
+        <a href="#"><span class="text">To Top</span></a>
+        <span class="line"></span>
+      </div>
+    </div>
+
+    <script
+      data-cfasync="false"
+      src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="js/jquery.js"></script>
+    <!--[if lt IE 10]>
+      <script type="text/javascript" src="js/ie8.js"></script>
+    <![endif]-->
+    <script src="js/plugins.js"></script>
+    <script src="js/contact.form.js"></script>
+    <script src="js/init.js"></script>
+  </body>
 
 
-
-    <!-- Section Divider -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr class="section-divider">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    <!-- end of section divider -->
-
-
-
-    <!-- Contact -->
-    <div id="contact" class="form-1 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Contact details</h2>
-                    <p class="p-heading"> <a class="blue no-line" href = "mailto: patelshiv2025@gmail.com">Send an Email</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->  
-    <!-- end of contact -->
-
-
-    <!-- Footer -->
-    <div class="footer bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="social-container">
-
-                        <span class="fa-stack">
-                            <a href="https://github.com/HorizonShiv" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-github fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="https://www.behance.net/lightninggamer1" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-behance fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="https://twitter.com/shivpatel3035" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="https://www.instagram.com/shivpatel1203/" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-
-                       
-                        
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
-
-
-    <!-- Copyright -->
-    <div class="copyright bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a class="no-line" href="#your-link">Shiv Patel</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-        
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-    
-    	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
-
-</body>
 </html>
