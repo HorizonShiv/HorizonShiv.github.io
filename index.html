@@ -3,43 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submit Location</title>
+    <title>Google Form with Auto Location</title>
 </head>
 <body>
-    <h2>Fetching Your Location...</h2>
+
+    <h2>Submit Your Response with Location</h2>
+    <p>Click the button below to allow location tracking and open the form.</p>
+    <button onclick="getLocation()">Submit Form</button>
+
     <script>
-        // Base Google Form URL (without parameters)
-        const formBaseURL = "https://docs.google.com/forms/d/e/1FAIpQLSfyRqmCknjh-i6BeMM_3ytkhLS-FPec4GBTJs7A-5CIYfSpqg/viewform";
-
-        // Entry field IDs for Latitude and Longitude
-        const entryLat = "entry.1986451128";  // Replace with your form's Latitude entry ID
-        const entryLng = "entry.1977838306";  // Replace with your form's Longitude entry ID
-
         function getLocation() {
             if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(success, error);
+                navigator.geolocation.getCurrentPosition(sendForm, showError);
             } else {
                 alert("Geolocation is not supported by this browser.");
             }
         }
 
-        function success(position) {
-            const lat = position.coords.latitude;
-            const lng = position.coords.longitude;
+        function sendForm(position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
 
-            // Construct the Google Form URL with pre-filled values
-            const formURL = `${formBaseURL}?usp=pp_url&${entryLat}=${lat}&${entryLng}=${lng}`;
+            // Your Google Form Pre-filled URL Template
+            var googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLScm93mFWj-U7d69BTSBmd6x63mkrayT7Plf6bMy02rXdmCNvQ/viewform";
 
-            // Redirect the user to the form with location data pre-filled
+            // Entry IDs from your form
+            var entryLat = "entry.588323564";  // Latitude field
+            var entryLon = "entry.1057409655"; // Longitude field
+
+            // Construct the pre-filled URL with live coordinates
+            var formURL = googleFormURL + "?usp=pp_url&" + entryLat + "=" + encodeURIComponent(lat) + "&" + entryLon + "=" + encodeURIComponent(lon);
+
+            // Redirect to the Google Form with auto-filled location
             window.location.href = formURL;
         }
 
-        function error() {
-            alert("Unable to retrieve location. Please enable location services.");
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    alert("You denied the request for Geolocation.");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Location information is unavailable.");
+                    break;
+                case error.TIMEOUT:
+                    alert("The request to get your location timed out.");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("An unknown error occurred.");
+                    break;
+            }
         }
-
-        // Fetch location when the page loads
-        getLocation();
     </script>
+
 </body>
 </html>
